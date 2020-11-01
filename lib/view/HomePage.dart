@@ -108,7 +108,7 @@ class MyHomePage extends StatelessWidget {
               },
             ),
             ListTile(
-              title: Text('Liên hệ'),
+              title: Text('Liên lạc'),
               leading: new Tab(
                 icon: new Image.asset("src/icon/contact.png"),
               ),
