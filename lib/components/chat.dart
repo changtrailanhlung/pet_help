@@ -96,7 +96,7 @@ class ChatScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               IconButton(
-                                icon: Icon(Icons.send),
+                                icon: Icon(Icons.keyboard_voice_rounded),
                                 onPressed: () {},
                               ),
                               IconButton(
@@ -104,7 +104,11 @@ class ChatScreen extends StatelessWidget {
                                 onPressed: () {},
                               ),
                               IconButton(
-                                icon: Icon(Icons.keyboard_voice_rounded),
+                                icon: Icon(Icons.attach_file),
+                                onPressed: () {},
+                              ),
+                              IconButton(
+                                icon: Icon(Icons.send),
                                 onPressed: () {},
                               ),
                             ],
