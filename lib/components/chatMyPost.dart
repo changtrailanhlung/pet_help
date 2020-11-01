@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pet_help/view/Contact.dart';
 import 'package:pet_help/view/UserPetProfile.dart';
 import 'package:pet_help/view/UserPostManagement.dart';
+import 'package:pet_help/Global/Settings.dart ' as Settings;
 
 class ChatMyPostScreen extends StatelessWidget {
   final String name;
@@ -52,143 +53,75 @@ class ChatMyPostScreen extends StatelessWidget {
           ],
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.only(top: 620),
+      body: SafeArea(
         child: Container(
           child: Stack(
+            fit: StackFit.loose,
             children: <Widget>[
-              Positioned.fill(
-                child: Column(
-                  children: <Widget>[
-                    // Expanded(
-                    //   child: ListView.builder(
-                    //     padding: const EdgeInsets.all(15),
-                    //     itemCount: messages.length,
-                    //     itemBuilder: (ctx, i) {
-                    //       if (messages[i]['status'] == MessageType.received) {
-                    //         return ReceivedMessagesWidget(i: i);
-                    //       } else {
-                    //         return SentMessageWidget(i: i);
-                    //       }
-                    //     },
-                    //   ),
-                    // ),
-                    Container(
-                      margin: EdgeInsets.all(15.0),
-                      height: 61,
-                      child: Row(
-                        children: <Widget>[
-                          Expanded(
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius: BorderRadius.circular(35.0),
-                                boxShadow: [
-                                  BoxShadow(
-                                      offset: Offset(0, 3),
-                                      blurRadius: 5,
-                                      color: Colors.grey)
-                                ],
-                              ),
-                              child: Row(
-                                children: <Widget>[
-                                  IconButton(
-                                      icon: Icon(Icons.face), onPressed: () {}),
-                                  Expanded(
-                                    child: TextField(
-                                      decoration: InputDecoration(
-                                          hintText: "Type Something...",
-                                          border: InputBorder.none),
-                                    ),
-                                  ),
-                                  IconButton(
-                                    icon: Icon(Icons.photo_camera),
-                                    onPressed: () {},
-                                  ),
-                                  IconButton(
-                                    icon: Icon(Icons.attach_file),
-                                    onPressed: () {},
-                                  )
-                                ],
-                              ),
-                            ),
-                          ),
-                          SizedBox(width: 15),
-                          Container(
-                            padding: const EdgeInsets.all(15.0),
-                            decoration: BoxDecoration(
-                                color: Colors.green, shape: BoxShape.circle),
-                            child: InkWell(
-                              child: Icon(
-                                Icons.keyboard_voice,
-                                color: Colors.white,
-                              ),
-                              // onLongPress: () {
-                              //   setState(() {
-                              //     _showBottom = true;
-                              //   });
-                              // },
-                            ),
-                          )
-                        ],
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                // mainAxisAlignment: MainAxisAlignment.start,
+                // mainAxisSize: MainAxisSize.max,
+                children: <Widget>[
+                  Divider(
+                    height: 0,
+                    color: Colors.black54,
+                  ),
+                  Flexible(
+                    fit: FlexFit.tight,
+                    child: Container(
+                      width: MediaQuery.of(context).size.width,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage(
+                                "src/image/chat-background-1.jpg"),
+                            fit: BoxFit.cover,
+                            colorFilter: Settings.isDarkMode
+                                ? ColorFilter.mode(
+                                Colors.grey[850], BlendMode.hardLight)
+                                : ColorFilter.linearToSrgbGamma()),
                       ),
-                    )
-                  ],
-                ),
+                    ),
+                  ),
+                  Divider(height: 0, color: Colors.black26),
+                  Container(
+                    height: 50,
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 8.0),
+                      child: TextField(
+                        maxLines: 20,
+                        decoration: InputDecoration(
+                          suffixIcon: Row(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            mainAxisSize: MainAxisSize.min,
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              IconButton(
+                                icon: Icon(Icons.keyboard_voice_rounded, color:Color.fromRGBO(253, 158, 121, 1)),
+                                onPressed: () {},
+                              ),
+                              IconButton(
+                                icon: Icon(Icons.image , color:Color.fromRGBO(253, 158, 121, 1)),
+                                onPressed: () {},
+                              ),
+                              IconButton(
+                                icon: Icon(Icons.attach_file , color:Color.fromRGBO(253, 158, 121, 1)),
+                                onPressed: () {},
+                              ),
+                              IconButton(
+                                icon: Icon(Icons.send , color:Color.fromRGBO(253, 158, 121, 1)),
+                                onPressed: () {},
+                              ),
+                            ],
+                          ),
+                          border: InputBorder.none,
+                          hintText: "Enter your message",
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
               ),
-              // Positioned.fill(
-              //   child: GestureDetector(
-              //     onTap: () {
-              //       setState(() {
-              //         _showBottom = false;
-              //       });
-              //     },
-              //   ),
-              // ),
-              // _showBottom
-              //     ? Positioned(
-              //   bottom: 90,
-              //   left: 25,
-              //   right: 25,
-              //   child: Container(
-              //     padding: EdgeInsets.all(25.0),
-              //     decoration: BoxDecoration(
-              //       color: Colors.white,
-              //       boxShadow: [
-              //         BoxShadow(
-              //             offset: Offset(0, 5),
-              //             blurRadius: 15.0,
-              //             color: Colors.grey)
-              //       ],
-              //     ),
-              //     child: GridView.count(
-              //       mainAxisSpacing: 21.0,
-              //       crossAxisSpacing: 21.0,
-              //       shrinkWrap: true,
-              //       crossAxisCount: 3,
-              //       children: List.generate(
-              //         icons.length,
-              //             (i) {
-              //           return Container(
-              //             decoration: BoxDecoration(
-              //               borderRadius: BorderRadius.circular(15.0),
-              //               color: Colors.grey[200],
-              //               border: Border.all(color: Colors.green, width: 2),
-              //             ),
-              //             child: IconButton(
-              //               icon: Icon(
-              //                 icons[i],
-              //                 color: Colors.green,
-              //               ),
-              //               onPressed: () {},
-              //             ),
-              //           );
-              //         },
-              //       ),
-              //     ),
-              //   ),
-              // )
-              //     : Container(),
             ],
           ),
         ),

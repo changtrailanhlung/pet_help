@@ -96,19 +96,19 @@ class ChatScreen extends StatelessWidget {
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               IconButton(
-                                icon: Icon(Icons.keyboard_voice_rounded),
+                                icon: Icon(Icons.keyboard_voice_rounded, color:Color.fromRGBO(253, 158, 121, 1)),
                                 onPressed: () {},
                               ),
                               IconButton(
-                                icon: Icon(Icons.image),
+                                icon: Icon(Icons.image , color:Color.fromRGBO(253, 158, 121, 1)),
                                 onPressed: () {},
                               ),
                               IconButton(
-                                icon: Icon(Icons.attach_file),
+                                icon: Icon(Icons.attach_file , color:Color.fromRGBO(253, 158, 121, 1)),
                                 onPressed: () {},
                               ),
                               IconButton(
-                                icon: Icon(Icons.send),
+                                icon: Icon(Icons.send , color:Color.fromRGBO(253, 158, 121, 1)),
                                 onPressed: () {},
                               ),
                             ],

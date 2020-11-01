@@ -19,10 +19,17 @@ class RescueHome extends StatelessWidget {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
       appBar: AppBar(
-        title: Text(
-          'Trang chủ',
-          style: GoogleFonts.lato(
-              fontStyle: FontStyle.normal, color: Colors.white, fontSize: 24),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(0, 0, 130, 40),
+              child: Image.asset(
+                'src/icon/logoCute.png',
+                height: 110,
+              ),
+            ),
+          ],
         ),
         centerTitle: true,
         backgroundColor: Color.fromRGBO(253, 158, 121, 1),

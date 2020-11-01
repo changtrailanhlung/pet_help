@@ -55,7 +55,7 @@ class RescueHomeList extends StatelessWidget {
                             child: (Text(
                               "Một con mèo bị phỏng ngay miệng",
                               style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 23,
                                 fontWeight: FontWeight.bold,
                                 color: Color.fromRGBO(253, 158, 121, 1),
                               ),
@@ -160,7 +160,7 @@ class RescueHomeList extends StatelessWidget {
                               width: size.width * 0.1,
                               child: Column(
                                 children: [
-                                  Icon(Icons.article, color: Colors.red,),
+                                  Icon(Icons.warning, color: Colors.red,),
                                 ],
                               ),
                             ),
@@ -199,7 +199,7 @@ class RescueHomeList extends StatelessWidget {
                     ],
                   ),
                 ]),
-                height: size.height * 0.35,
+                height: size.height * 0.33,
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15),
@@ -247,7 +247,7 @@ class RescueHomeList extends StatelessWidget {
                             child: (Text(
                               "Cứu chú chó bị đánh đập",
                               style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 23,
                                 fontWeight: FontWeight.bold,
                                 color: Color.fromRGBO(253, 158, 121, 1),
                               ),
@@ -352,7 +352,7 @@ class RescueHomeList extends StatelessWidget {
                               width: size.width * 0.1,
                               child: Column(
                                 children: [
-                                  Icon(Icons.article, color: Colors.orangeAccent,),
+                                  Icon(Icons.warning, color: Colors.orangeAccent,),
                                 ],
                               ),
                             ),
@@ -391,7 +391,7 @@ class RescueHomeList extends StatelessWidget {
                     ],
                   ),
                 ]),
-                height: size.height * 0.35,
+                height: size.height * 0.33,
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15),
@@ -439,7 +439,7 @@ class RescueHomeList extends StatelessWidget {
                             child: (Text(
                               "Một chú mèo con bị lạc",
                               style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 23,
                                 fontWeight: FontWeight.bold,
                                 color: Color.fromRGBO(253, 158, 121, 1),
                               ),
@@ -544,7 +544,7 @@ class RescueHomeList extends StatelessWidget {
                               width: size.width * 0.1,
                               child: Column(
                                 children: [
-                                  Icon(Icons.article, color: Colors.green,),
+                                  Icon(Icons.warning, color: Colors.green,),
                                 ],
                               ),
                             ),
@@ -583,7 +583,7 @@ class RescueHomeList extends StatelessWidget {
                     ],
                   ),
                 ]),
-                  height: size.height * 0.35,
+                  height: size.height * 0.33,
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15),
@@ -736,7 +736,7 @@ class RescueHomeList extends StatelessWidget {
                               width: size.width * 0.1,
                               child: Column(
                                 children: [
-                                  Icon(Icons.article, color: Colors.green,),
+                                  Icon(Icons.warning, color: Colors.green,),
                                 ],
                               ),
                             ),
@@ -775,7 +775,7 @@ class RescueHomeList extends StatelessWidget {
                     ],
                   ),
                 ]),
-                height: size.height * 0.35  ,
+                height: size.height * 0.33  ,
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(15),
