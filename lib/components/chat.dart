@@ -73,7 +73,7 @@ class ChatScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                         image: DecorationImage(
                             image: AssetImage(
-                                "assets/images/chat-background-1.jpg"),
+                                "src/image/chat-background-1.jpg"),
                             fit: BoxFit.cover,
                             colorFilter: Settings.isDarkMode
                                 ? ColorFilter.mode(
@@ -101,6 +101,10 @@ class ChatScreen extends StatelessWidget {
                               ),
                               IconButton(
                                 icon: Icon(Icons.image),
+                                onPressed: () {},
+                              ),
+                              IconButton(
+                                icon: Icon(Icons.keyboard_voice_rounded),
                                 onPressed: () {},
                               ),
                             ],
