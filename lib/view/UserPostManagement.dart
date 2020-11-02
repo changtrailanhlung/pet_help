@@ -230,9 +230,25 @@ class UserPostManagement extends StatelessWidget {
                                 padding: const EdgeInsets.fromLTRB(8, 18, 3, 4),
                                 child: Row(
                                   children: [
+                                    Icon(Icons.account_circle_outlined, color: Color.fromRGBO(253, 158, 121, 1),),
+                                    Text(
+                                      "Trung Tâm SAR",
+                                      style: TextStyle(
+                                        fontSize: 15,
+                                        fontWeight: FontWeight.bold,
+                                        color:Color.fromRGBO(253, 158, 121, 1),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(8, 18, 3, 4),
+                                child: Row(
+                                  children: [
                                     Icon(Icons.location_on),
                                     Text(
-                                      " 658 Lã Xuân Oai, Q.9, HCM",
+                                      " 256 Lê Văn Việt , Q.9, HCM",
                                         style: TextStyle(
                                           fontSize: 15,
                                           fontWeight: FontWeight.bold,

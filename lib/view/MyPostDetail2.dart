@@ -213,7 +213,7 @@ class MyPostDetail2State extends State<MyPostDetail2> {
                           Container(
                             width: 270,
                             child: Text(
-                              "120 Võ Văn Ngân, Q9, TP.HCM",
+                              "256 Lê Văn Việt, Q9, TP.HCM",
                               style: TextStyle(
                                 fontSize: 17,
                                 fontWeight: FontWeight.w300,
