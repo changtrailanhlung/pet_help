@@ -169,30 +169,7 @@ class MyPostDetail2State extends State<MyPostDetail2> {
                 ),
                 Column(
                   children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(8, 0, 0, 8),
-                      child: Row(
-                        children: [
-                          Icon(Icons.person),
-                          Text(
-                            " Người đăng: ",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          Text(
-                            "Dũng",
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: Color.fromRGBO(253, 158, 121, 1),
-                              fontStyle: FontStyle.italic,
-                              fontWeight: FontWeight.w300,
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
+
 
                     Padding(
                       padding: const EdgeInsets.fromLTRB(8, 0, 0, 8),

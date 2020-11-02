@@ -28,12 +28,12 @@ class MyPostDetail extends StatefulWidget {
 }
 
 class MyPostDetailState extends State<MyPostDetail> {
-  String imgUrl = "src/image/rescue_cat3.jpg";
+  String imgUrl = "src/image/cat_5.jpg";
 
   @override
   void initState() {
     super.initState();
-    imgUrl = 'src/image/rescue_cat3.jpg';
+    imgUrl = 'src/image/cat_5.jpg';
     _getLocationPermission();
   }
 
@@ -66,7 +66,7 @@ class MyPostDetailState extends State<MyPostDetail> {
             }),
         title: Container(
           child: Text(
-            'MÈO QUÈ',
+            'Bé mèo bị lạc',
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
         ),
@@ -109,11 +109,11 @@ class MyPostDetailState extends State<MyPostDetail> {
                                         onTap: () {
                                           setState(() {
                                             imgUrl =
-                                                "src/image/rescue_cat3.jpg";
+                                                "src/image/cat_5.jpg";
                                           });
                                         },
                                         child: Image.asset(
-                                          'src/image/rescue_cat3.jpg',
+                                          'src/image/cat_5.jpg',
                                         ),
                                       ),
                                       Padding(
@@ -169,30 +169,7 @@ class MyPostDetailState extends State<MyPostDetail> {
                 ),
                 Column(
                   children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(8, 0, 0, 8),
-                      child: Row(
-                        children: [
-                          Icon(Icons.person),
-                          Text(
-                            " Người đăng: ",
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          Text(
-                            "Dũng",
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: Color.fromRGBO(253, 158, 121, 1),
-                              fontStyle: FontStyle.italic,
-                              fontWeight: FontWeight.w300,
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
+
 
                     Padding(
                       padding: const EdgeInsets.fromLTRB(8, 0, 0, 8),

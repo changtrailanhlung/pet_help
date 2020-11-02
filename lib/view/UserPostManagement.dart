@@ -91,7 +91,7 @@ class UserPostManagement extends StatelessWidget {
                                   child: Container(
                                     width: 180,
                                     child: (Text(
-                                      "MÈO QUÈ",
+                                      "Mèo bị bỏ rơi...",
                                       style: TextStyle(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold,
@@ -101,28 +101,7 @@ class UserPostManagement extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.fromLTRB(8, 23, 0, 8),
-                                child: Row(
-                                  children: [
-                                    Text(
-                                      "Được đăng bởi ",
-                                      style: TextStyle(
-                                        fontSize: 17,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                    Text(
-                                      "Tom",
-                                      style: TextStyle(
-                                        fontSize: 17,
-                                        fontWeight: FontWeight.bold,
-                                        color: Color.fromRGBO(253, 158, 121, 1),
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ),
+
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(8, 18, 3, 4),
                                 child: Row(
@@ -220,7 +199,7 @@ class UserPostManagement extends StatelessWidget {
                                   child: Container(
                                     width: 180,
                                     child: (Text(
-                                      "Mèo bị bỏ rơi...",
+                                      "Bé mèo bị lạc",
                                       style: TextStyle(
                                         fontSize: 20,
                                         fontWeight: FontWeight.bold,
@@ -230,28 +209,7 @@ class UserPostManagement extends StatelessWidget {
                                   ),
                                 ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.fromLTRB(8, 23, 0, 8),
-                                child: Row(
-                                  children: [
-                                    Text(
-                                      "Được đăng bởi ",
-                                      style: TextStyle(
-                                        fontSize: 17,
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                    Text(
-                                      "Tom",
-                                      style: TextStyle(
-                                        fontSize: 17,
-                                        fontWeight: FontWeight.bold,
-                                        color: Color.fromRGBO(253, 158, 121, 1),
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ),
+
                               Padding(
                                 padding: const EdgeInsets.fromLTRB(8, 18, 3, 4),
                                 child: Row(
