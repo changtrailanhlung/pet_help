@@ -42,35 +42,6 @@ class MyPost extends StatelessWidget {
           },
         ),
       ),
-
-      // drawer: Drawer(
-      //   // Add a ListView to the drawer. This ensures the user can scroll
-      //   // through the options in the drawer if there isn't enough vertical
-      //   // space to fit everything.
-      //   // child: ListView(
-      //   //   // Important: Remove any padding from the ListView.
-      //   //   padding: EdgeInsets.zero,
-      //   //   children: <Widget>[
-      //   //     // Container(
-      //   //     //   color: Color.fromRGBO(253, 158, 121, 1),
-      //   //     //   height: 200,
-      //   //     //   child: Row(
-      //   //     //     children: <Widget>[
-      //   //     //       Padding(
-      //   //     //         padding: const EdgeInsets.all(8.0),
-      //   //     //         child: Container(
-      //   //     //           width: 75,
-      //   //     //           height: 75,
-      //   //     //           padding: EdgeInsets.all(15),
-      //   //     //         ),
-      //   //     //       ),
-      //   //     //
-      //   //     //     ],
-      //   //     //   ),
-      //   //     // ),
-      //   //   ],
-      //   // ),
-      // ),
       body: Container(
         decoration: BoxDecoration(),
         child: Column(
@@ -137,15 +108,15 @@ class MyPost extends StatelessWidget {
                                     ),
                                   ),
                                   Container(
-                                     width: size.width * 0.2,
+                                     // width: size.width * 0.2,
                                     child: Column(
                                       children: [
                                         Text(
                                           "Cứu Trợ FPT",
                                           style: TextStyle(
-                                            fontSize: 17,
-                                            fontWeight: FontWeight.w500,
-                                            color: Color.fromRGBO(253, 158, 121, 1),
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.w300,
+                                            // color: Color.fromRGBO(253, 158, 121, 1),
                                           ),
                                         ),
                                       ],
@@ -155,7 +126,7 @@ class MyPost extends StatelessWidget {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(1, 10, 0, 8),
+                              padding: const EdgeInsets.fromLTRB(1, 0, 0, 8),
                               child: Row(
                                 children: [
                                   Container(
@@ -184,7 +155,7 @@ class MyPost extends StatelessWidget {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(1, 10, 0, 8),
+                              padding: const EdgeInsets.fromLTRB(1, 0, 0, 8),
                               child: Row(
                                 children: [
                                   Container(
@@ -208,23 +179,18 @@ class MyPost extends StatelessWidget {
                                         Text(
                                           "111 Trường Chinh, Phường 12, Tân Bình, TP.HCM",
                                           style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.bold,
-
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.w300,
                                           ),
                                         ),
-
                                       ],
-
                                     ),
-
                                   ),
-
                                 ],
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(10, 10, 0, 8),
+                              padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
                               child: Row(
                                 children: [
                                   Icon(Icons.wb_incandescent_rounded,color: Colors.green,),
@@ -299,7 +265,7 @@ class MyPost extends StatelessWidget {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(1, 10, 0, 8),
+                              padding: const EdgeInsets.fromLTRB(1, 10, 0, 0),
                               child: Row(
                                 children: [
                                   Container(
@@ -311,15 +277,15 @@ class MyPost extends StatelessWidget {
                                     ),
                                   ),
                                   Container(
-                                    width: size.width * 0.2,
+                                    // width: size.width * 0.2,
                                     child: Column(
                                       children: [
                                         Text(
                                           "Cứu Trợ FPT",
                                           style: TextStyle(
-                                            fontSize: 17,
-                                            fontWeight: FontWeight.w500,
-                                            color: Color.fromRGBO(253, 158, 121, 1),
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.w300,
+                                            // color: Color.fromRGBO(253, 158, 121, 1),
                                           ),
                                         ),
                                       ],
@@ -329,7 +295,7 @@ class MyPost extends StatelessWidget {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(1, 10, 0, 8),
+                              padding: const EdgeInsets.fromLTRB(1, 10, 0, 0),
                               child: Row(
                                 children: [
                                   Container(
@@ -367,24 +333,19 @@ class MyPost extends StatelessWidget {
                                     Column(
                                       children: [
                                         Icon(Icons.location_on),
-
                                       ],
-
                                     ),
-
                                   ),
                                   Container(
                                     width: size.width * 0.33,
                                     child:
                                     Column(
                                       children: [
-
                                         Text(
                                           "111 Trường Chinh, Phường 12, Tân Bình, TP.HCM",
                                           style: TextStyle(
-                                            fontSize: 14,
-                                            fontWeight: FontWeight.bold,
-
+                                            fontSize: 15,
+                                            fontWeight: FontWeight.w300,
                                           ),
                                         ),
 
@@ -398,12 +359,12 @@ class MyPost extends StatelessWidget {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.fromLTRB(10, 10, 0, 8),
+                              padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
                               child: Row(
                                 children: [
                                   Icon(Icons.wb_incandescent_rounded,color: Colors.orangeAccent,),
                                   Text(
-                                    " CHƯA ĐƯỢC NHẬN NUÔI",
+                                    " CHƯA ĐƯỢC NHẬN \n NUÔI",
                                     style: TextStyle(
                                       color: Colors.orangeAccent,
                                       fontSize: 15,

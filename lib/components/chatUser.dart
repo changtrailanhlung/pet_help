@@ -114,7 +114,7 @@ class ChatUserScreen extends StatelessWidget {
                             ],
                           ),
                           border: InputBorder.none,
-                          hintText: "Enter your message",
+                          hintText: "Nhập tin nhắn",
                         ),
                       ),
                     ),

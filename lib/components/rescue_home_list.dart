@@ -53,7 +53,7 @@ class RescueHomeList extends StatelessWidget {
                           width: size.width * 0.35,
                           child: Container(
                             child: (Text(
-                              "Một con mèo bị phỏng ngay miệng",
+                              "Mèo con bị phỏng ngay miệng",
                               style: TextStyle(
                                 fontSize: 23,
                                 fontWeight: FontWeight.bold,

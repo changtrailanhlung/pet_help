@@ -160,7 +160,7 @@ class PostDetailRescueStage extends State<PostDetailRescue> {
                                 children: [
                                   Text("Loại",
                                       style:
-                                      TextStyle(color: Colors.blueAccent)),
+                                      TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold,)),
                                   Text("Mèo",
                                       style: TextStyle(color: Colors.orange)),
                                 ],
@@ -169,7 +169,7 @@ class PostDetailRescueStage extends State<PostDetailRescue> {
                                 children: [
                                   Text("Tuổi",
                                       style:
-                                      TextStyle(color: Colors.blueAccent)),
+                                      TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold,)),
                                   Text("1 Tuổi",
                                       style: TextStyle(color: Colors.orange)),
                                 ],
@@ -178,7 +178,7 @@ class PostDetailRescueStage extends State<PostDetailRescue> {
                                 children: [
                                   Text("Giới tính",
                                       style:
-                                      TextStyle(color: Colors.blueAccent)),
+                                      TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold,)),
                                   Text("Đực",
                                       style: TextStyle(color: Colors.orange)),
                                 ],
@@ -187,7 +187,7 @@ class PostDetailRescueStage extends State<PostDetailRescue> {
                                 children: [
                                   Text("Thuộc giống",
                                       style:
-                                      TextStyle(color: Colors.blueAccent)),
+                                      TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold,)),
                                   Text("Nga",
                                       style: TextStyle(color: Colors.orange)),
                                 ],
@@ -196,7 +196,7 @@ class PostDetailRescueStage extends State<PostDetailRescue> {
                                 children: [
                                   Text("Cân nặng",
                                       style:
-                                      TextStyle(color: Colors.blueAccent)),
+                                      TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold,)),
                                   Text("4Kg",
                                       style: TextStyle(color: Colors.orange)),
                                 ],
@@ -218,7 +218,7 @@ class PostDetailRescueStage extends State<PostDetailRescue> {
                           width: 110,
                           alignment: Alignment(0.1, 1.0),
                           child: Text(
-                            "Bủn",
+                            "BỦN",
                             style: TextStyle(
                                 color: Colors.brown,
                                 fontWeight: FontWeight.bold,
@@ -246,8 +246,8 @@ class PostDetailRescueStage extends State<PostDetailRescue> {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
                         Container(
-                          height: 30,
-                          width: 110,
+                          height: 35,
+                          width: 120,
                           alignment: Alignment.center,
                           padding: EdgeInsets.all(6),
                           decoration: BoxDecoration(
@@ -271,7 +271,7 @@ class PostDetailRescueStage extends State<PostDetailRescue> {
                           ),
                         ),
                         Container(
-                          height: 30,
+                          height: 35,
                           width: 110,
                           alignment: Alignment.center,
                           padding: EdgeInsets.all(6),
@@ -296,7 +296,7 @@ class PostDetailRescueStage extends State<PostDetailRescue> {
                           ),
                         ),
                         Container(
-                          height: 30,
+                          height: 35,
                           width: 110,
                           alignment: Alignment.center,
                           padding: EdgeInsets.all(6),
@@ -325,15 +325,17 @@ class PostDetailRescueStage extends State<PostDetailRescue> {
                     Row(
                       children: <Widget>[
                         Container(
-                          padding: EdgeInsets.all(9.0),
-                          height: 80,
-                          width: 350,
-                          alignment: Alignment.center,
+                          padding: EdgeInsets.all(10.0),
+                          height: 90,
+                          width: 400,
+                          // width: double.infinity,
+                          // alignment: Alignment.center,
+                          alignment: Alignment(0.1, 1.0),
                           child: Text(
                             "Bum là một con mèo Nga. Nó được biết đến với tính cách trầm lặng và ngọt ngào. Mặc dù Bum có xu hướng thư giãn và dễ tính, Bum cũng có khí chất của hoàng tộc.",
                             textAlign: TextAlign.left,
                             overflow: TextOverflow.ellipsis,
-                            maxLines: 3,
+                            maxLines: 4,
                           ),
                         ),
                       ],
@@ -349,7 +351,7 @@ class PostDetailRescueStage extends State<PostDetailRescue> {
                       child: Container(
                         alignment: Alignment(0.6, 1.0),
                         padding: EdgeInsets.all(6),
-                        height: 30,
+                        height: 35,
                         width: 250,
                         decoration: BoxDecoration(
                           color: Colors.lightBlueAccent,

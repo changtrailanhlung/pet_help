@@ -30,9 +30,7 @@ class ItemInfo extends State<PetProfile> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-
             icon: Icon(Icons.arrow_back_ios, color: Colors.white),
-
             onPressed: () {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
                 builder: (context) => RescuePetManagement(),
@@ -227,27 +225,11 @@ class ItemInfo extends State<PetProfile> {
                           width: 110,
                           alignment: Alignment(0.1, 1.0),
                           child: Text(
-                            "Bum",
+                            "BUM",
                             style: TextStyle(
                                 color: Colors.brown,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 40),
-                          ),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.fromLTRB(8, 0, 0, 0),
-                          child: Container(
-                            height: 15,
-                            width: 200,
-                            child: Text(
-                              "Last reported: 20/5/1999",
-                              style:
-                                  TextStyle(color: Colors.grey, fontSize: 15),
-                            ),
                           ),
                         ),
                       ],
@@ -257,12 +239,29 @@ class ItemInfo extends State<PetProfile> {
                       child: Row(
                         children: <Widget>[
                           Text(
+                              "Lần báo cáo trước: ",
+                              style:
+                                  TextStyle(color: Colors.black54, fontWeight: FontWeight.bold, fontSize: 17, ),
+                            ),
+                          Text(
+                              "20/05/1999",
+                            style:
+                            TextStyle(color: Colors.grey, fontWeight: FontWeight.w300, fontStyle: FontStyle.italic, fontSize: 15,),
+                          ),
+                          ],
+                      ),
+                        ),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: <Widget>[
+                          Text(
                             "Người nhận nuôi: ",
-                            style: TextStyle(color: Colors.grey),
+                            style: TextStyle(color: Colors.black54, fontWeight: FontWeight.bold, fontSize: 17, ),
                           ),
                           Text(
-                            "Nguyễn ",
-                            style: TextStyle(color: Colors.orange),
+                            "Nguyên ",
+                            style: TextStyle(color: Colors.orange, fontWeight: FontWeight.w300, fontSize: 15, fontStyle: FontStyle.italic, ),
                           ),
                         ],
                       ),
