@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 // import 'package:pet_help/components/BottomNaviBar.dart';
-import 'package:pet_help/components/listView.dart';
-import 'package:pet_help/components/list_header.dart';
+import 'file:///E:/Github/HCI201/Pet-Help/lib/components/ListHeader/list_header.dart';
 import 'package:pet_help/components/rescue_home_list.dart';
-import 'package:pet_help/view/HomePage.dart';
 import 'package:pet_help/view/PostDetailRescue.dart';
 import 'package:pet_help/view/RescueHome.dart';
 import 'package:pet_help/view/loadimg.dart';

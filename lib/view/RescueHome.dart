@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pet_help/components/BottomNaviBar.dart';
 import 'package:pet_help/components/BottomNaviBarRescue.dart';
-import 'package:pet_help/components/list_header.dart';
+import 'file:///E:/Github/HCI201/Pet-Help/lib/components/ListHeader/list_header.dart';
 import 'package:pet_help/components/rescue_home_list.dart';
+import 'package:pet_help/rate_my_app/RateMyApp.dart';
+import 'package:pet_help/rate_my_app/RateMyAppRescue.dart';
 import 'package:pet_help/view/AdoptRequestList.dart';
 import 'package:pet_help/view/Contact.dart';
 import 'package:pet_help/view/Login.dart';
@@ -148,6 +150,22 @@ class RescueHome extends StatelessWidget {
                 );
               },
             ),
+            // ListTile(
+            //   title: Text('Đánh giá ứng dụng'),
+            //   leading: new Tab(
+            //     icon: new Icon(Icons.star_border, size: 40,color: Colors.black54,)
+            //   ),
+            //   onTap: () {
+            //     // Update the state of the app
+            //     // ...
+            //     // Then close the drawer
+            //     Navigator.of(context).pushReplacement(
+            //       MaterialPageRoute(
+            //         builder: (context) => RateMyAppRescue(),
+            //       ),
+            //     );
+            //   },
+            // ),
           ],
         ),
       ),

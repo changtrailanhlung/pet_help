@@ -9,7 +9,6 @@ import 'package:pet_help/view/AdoptRequest.dart';
 import 'package:pet_help/view/Contact.dart';
 import 'package:pet_help/view/GMap.dart';
 import 'package:pet_help/view/GMap2.dart';
-import 'package:pet_help/view/HomePage.dart';
 import 'package:pet_help/view/RescueHome.dart';
 import 'package:pet_help/view/RescuePetManagement.dart';
 import 'package:pet_help/view/PetHealthReportList.dart';

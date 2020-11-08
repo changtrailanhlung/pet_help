@@ -2,10 +2,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pet_help/components/BottomNaviBar.dart';
-import 'package:pet_help/components/list_header.dart';
+import 'file:///E:/Github/HCI201/Pet-Help/lib/components/ListHeader/list_header.dart';
 import 'package:pet_help/components/rescue_home_list.dart';
 import 'package:pet_help/components/rescue_pet_list.dart';
-import 'package:pet_help/view/HomePage.dart';
+import 'package:pet_help/view/HomePageUser/HomePage.dart';
 import 'package:pet_help/view/PetProfile.dart';
 import 'package:pet_help/view/RescueHome.dart';
 import 'package:pet_help/view/UserPetProfile.dart';
@@ -102,7 +102,7 @@ class UserPetManagement extends StatelessWidget {
                               ),
                             ),
                             Text(
-                              "15/02/2015",
+                              "15/02/2020",
                               style: TextStyle(
                                 fontSize: 14,
                                 color: Colors.grey,

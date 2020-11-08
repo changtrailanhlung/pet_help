@@ -8,7 +8,6 @@ import 'package:pet_help/view/AdoptRequest.dart';
 import 'package:pet_help/view/Contact.dart';
 import 'package:pet_help/view/GMap.dart';
 import 'package:pet_help/view/GMap2.dart';
-import 'package:pet_help/view/HomePage.dart';
 import 'package:pet_help/view/MapPic.dart';
 import 'package:pet_help/view/RescueHome.dart';
 import 'package:pet_help/view/RescuePetManagement.dart';
@@ -172,7 +171,7 @@ class UserPostDetailState extends State<UserPostDetail> {
                             ),
                           ),
                           Text(
-                            "Dũng Phạm",
+                            "Luân",
                             style: TextStyle(
                               fontSize: 20,
                               color: Color.fromRGBO(253, 158, 121, 1),
@@ -293,7 +292,7 @@ class UserPostDetailState extends State<UserPostDetail> {
                                 Container(
                                   width: 230,
                                   child: Text(
-                                    "Cam",
+                                    "Vàng",
                                     style: TextStyle(
                                       fontSize: 17,
                                       fontWeight: FontWeight.w300,
@@ -321,8 +320,16 @@ class UserPostDetailState extends State<UserPostDetail> {
                                   fontWeight: FontWeight.bold,
                                 ),
                               ),
+                              Text('Khẩn Cấp',
+                                style: TextStyle(
+                                  fontSize: 21,
+                                  fontWeight: FontWeight.w900,
+                                  color: Colors.red,
+                                ),
+                              ),
                             ],
                           ),
+
                           Padding(
                             padding: const EdgeInsets.fromLTRB(8, 8, 0, 8),
                             child: Row(
@@ -348,30 +355,6 @@ class UserPostDetailState extends State<UserPostDetail> {
                               ],
                             ),
                           ),
-                          // Padding(
-                          //   padding: const EdgeInsets.fromLTRB(8, 0, 0, 8),
-                          //   child: Row(
-                          //     children: [
-                          //       Text(
-                          //         "Bị thương: ",
-                          //         textAlign: TextAlign.left,
-                          //         style: TextStyle(
-                          //           fontSize: 17,
-                          //           fontWeight: FontWeight.bold,
-                          //         ),
-                          //       ),
-                          //       // Container(
-                          //       //   width: 230,
-                          //       //   child: Text(
-                          //       //     "Có",
-                          //       //     style: TextStyle(
-                          //       //       fontSize: 17,
-                          //       //     ),
-                          //       //   ),
-                          //       // )
-                          //     ],
-                          //   ),
-                          // ),
                           Padding(
                             padding: const EdgeInsets.fromLTRB(8, 0, 0, 8),
                             child: Row(
@@ -485,7 +468,7 @@ class UserPostDetailState extends State<UserPostDetail> {
                     //   ),
                     // ),
                     SizedBox(
-                      height: 38,
+                      height: 20,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -506,8 +489,8 @@ class UserPostDetailState extends State<UserPostDetail> {
                                   Navigator.of(context)
                                       .push(new MaterialPageRoute(
                                           builder: (context) => ChatScreen(
-                                                name: 'Dũng',
-                                                UrlImage: 'image/cat4.jpg',
+                                                name: 'Luân',
+                                                UrlImage: '',
                                               )));
                                 },
                                 child: Align(
@@ -538,7 +521,7 @@ class UserPostDetailState extends State<UserPostDetail> {
                               child: Column(
                                 children: [
                                   Align(
-                                    child: Text("Chấp nhận cứu trợ",
+                                    child: Text("Cứu trợ",
                                         style: TextStyle(
                                             color: Colors.white,
                                             fontSize: 16,

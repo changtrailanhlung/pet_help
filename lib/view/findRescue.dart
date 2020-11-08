@@ -7,7 +7,7 @@ import 'package:flutter_xlider/flutter_xlider.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:pet_help/components/location.dart';
-import 'package:pet_help/view/HomePage.dart';
+import 'package:pet_help/view/HomePageUser/HomePage.dart';
 import 'package:pet_help/view/RescueHome.dart';
 
 import 'loadimg.dart';

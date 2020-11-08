@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pet_help/components/chat.dart';
 import 'package:pet_help/view/AdoptForm.dart';
-import 'package:pet_help/view/HomePage.dart';
 import 'package:pet_help/view/RescueHome.dart';
 
 import '../components/app_bar.dart';

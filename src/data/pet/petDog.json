@@ -1,0 +1,19 @@
+[
+
+  {
+    "name": "Corgi",
+    "title": "Chó",
+    "user": "Trung tâm Pet Pro",
+    "address": "Khu 2 hoàng cương",
+    "pathImg" : "https://sansangduhoc.vn/wp-content/uploads/2017/04/ssdhhaihuoc-e1492263979267.jpg",
+    "distance": "12km"
+  },
+  {
+    "name": "Cate",
+    "title": "Chó",
+    "user": "Tân 1 cú",
+    "address": "Khu 2 hoàng cương",
+    "pathImg" : "https://i.pinimg.com/originals/bf/1f/dd/bf1fdd4cd4115708daeeac09aa2ad581.jpg",
+    "distance": "3km"
+  }
+]

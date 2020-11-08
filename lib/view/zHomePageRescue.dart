@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pet_help/components/BottomNaviBar.dart';
-import 'package:pet_help/components/listView.dart';
-import 'package:pet_help/components/list_header.dart';
+import 'package:pet_help/components/ListView/listview.dart';
+
+import 'file:///E:/Github/HCI201/Pet-Help/lib/components/ListHeader/list_header.dart';
 import 'package:pet_help/view/Contact.dart';
 import 'package:pet_help/view/Login.dart';
 import 'package:pet_help/view/UserPetManagement.dart';

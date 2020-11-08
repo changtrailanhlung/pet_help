@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pet_help/components/uploadImagesRes.dart';
+import 'package:pet_help/view/MapPic.dart';
 import 'package:pet_help/view/login_page.dart';
 
 import 'package:pet_help/view/uploadImages.dart';
@@ -22,11 +23,22 @@ class AddPetAfterResStage extends State<AddPetAfterRes> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Padding(
-          padding: const EdgeInsets.fromLTRB(80, 0, 0, 0),
-          child: Text("Báo cáo"),
+        leading: IconButton(
+
+            icon: Icon(Icons.arrow_back_ios, color: Colors.white),
+            onPressed: () {
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                builder: (context) => MapPic(),
+              ));
+            }),
+        title: Container(
+          child: Text(
+            'Báo cáo',
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
         ),
         backgroundColor: Color.fromRGBO(253, 158, 121, 1),
+        centerTitle: true,
       ),
 
       body: UploadImagesRes(),

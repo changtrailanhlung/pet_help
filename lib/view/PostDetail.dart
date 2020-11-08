@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:pet_help/view/AdoptForm.dart';
-import 'package:pet_help/view/HomePage.dart';
+import 'package:pet_help/view/HomePageUser/HomePage.dart';
+import 'package:pet_help/view/ProfileList/SARProfile.dart';
 
 import '../components/app_bar.dart';
 import '../components/item_image.dart';
@@ -225,17 +226,23 @@ class ItemInfo extends State<PostDetail> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        children: <Widget>[
-                          Text(
-                            "Từ: ",
-                            style: TextStyle(color: Colors.grey),
-                          ),
-                          Text(
-                            "Trung tâm SAR",
-                            style: TextStyle(color: Colors.orange),
-                          ),
-                        ],
+                      child: GestureDetector(
+                        onTap: (){
+                          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => SARProfileApp()));
+                        },
+                        child: Row(
+                          children: <Widget>[
+                            Text(
+                              "Từ: ",
+                              style: TextStyle(color: Colors.grey),
+                            ),
+                            Text(
+                              "Trung tâm SAR",
+                              style: TextStyle(color: Colors.orange, fontWeight: FontWeight.bold, fontSize: 20),
+
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                     Row(
@@ -345,7 +352,7 @@ class ItemInfo extends State<PostDetail> {
                       },
                       child: Container(
                         alignment: Alignment(1.0, 1.0),
-                        padding: EdgeInsets.all(6),
+                        padding: EdgeInsets.all(9),
                         height: 40,
                         width: 220,
                         decoration: BoxDecoration(
@@ -354,6 +361,7 @@ class ItemInfo extends State<PostDetail> {
                         ),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
+
                           children: <Widget>[
                             Text(
                               "Nhận nuôi",

@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pet_help/view/HomePage.dart';
-import 'package:pet_help/view/RescuePostManagement.dart';
 import 'package:pet_help/view/UserPetManagement.dart';
 import 'package:pet_help/view/UserPostManagement.dart';
 import 'package:pet_help/view/findRescue.dart';

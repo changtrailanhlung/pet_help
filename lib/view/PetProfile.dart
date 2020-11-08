@@ -4,7 +4,6 @@ import 'package:pet_help/components/app_bar.dart';
 import 'package:pet_help/components/chat.dart';
 import 'package:pet_help/components/item_image.dart';
 import 'package:pet_help/view/Contact.dart';
-import 'package:pet_help/view/HomePage.dart';
 import 'package:pet_help/view/PetHealthReportList.dart';
 import 'package:pet_help/view/RescuePetManagement.dart';
 
@@ -17,12 +16,12 @@ class PetProfile extends StatefulWidget {
 }
 
 class ItemInfo extends State<PetProfile> {
-  String imgUrl = "src/image/meo1.jpg";
+  String imgUrl = "src/image/download.jpg";
 
   @override
   void initState() {
     super.initState();
-    imgUrl = 'src/image/meo1.jpg';
+    imgUrl = 'src/image/download.jpg';
   }
 
   @override
@@ -80,11 +79,11 @@ class ItemInfo extends State<PetProfile> {
                                       GestureDetector(
                                         onTap: () {
                                           setState(() {
-                                            imgUrl = "src/image/meo1.jpg";
+                                            imgUrl = "src/image/download.jpg";
                                           });
                                         },
                                         child: Image.asset(
-                                          'src/image/meo1.jpg',
+                                          'src/image/download.jpg',
                                         ),
                                       ),
                                       Padding(
@@ -93,11 +92,11 @@ class ItemInfo extends State<PetProfile> {
                                         child: GestureDetector(
                                           onTap: () {
                                             setState(() {
-                                              imgUrl = "src/image/cat2.jpg";
+                                              imgUrl = "src/image/download (1).jpg";
                                             });
                                           },
                                           child: Image.asset(
-                                            'src/image/cat2.jpg',
+                                            'src/image/download (1).jpg',
                                           ),
                                         ),
                                       ),
@@ -107,24 +106,15 @@ class ItemInfo extends State<PetProfile> {
                                         child: GestureDetector(
                                           onTap: () {
                                             setState(() {
-                                              imgUrl = "src/image/cat3.jpg";
+                                              imgUrl = "src/image/download.jpg";
                                             });
                                           },
                                           child: Image.asset(
-                                            'src/image/cat3.jpg',
+                                            'src/image/download.jpg',
                                           ),
                                         ),
                                       ),
-                                      GestureDetector(
-                                        onTap: () {
-                                          setState(() {
-                                            imgUrl = "src/image/cat4.jpg";
-                                          });
-                                        },
-                                        child: Image.asset(
-                                          'src/image/cat4.jpg',
-                                        ),
-                                      ),
+
                                     ]),
                               ),
                             ))
@@ -159,7 +149,7 @@ class ItemInfo extends State<PetProfile> {
                                   Text(" Loại ",
                                       style:
                                       TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent)),
-                                  Text("Mèo",
+                                  Text("Chó",
                                       style: TextStyle(color: Colors.orange)),
                                 ],
                               ),
@@ -204,7 +194,7 @@ class ItemInfo extends State<PetProfile> {
                                   Text(" Thuộc giống ",
                                       style:
                                       TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent)),
-                                  Text("Nga",
+                                  Text("Lông xù",
                                       style: TextStyle(color: Colors.orange)),
                                 ],
                               ),
@@ -239,12 +229,12 @@ class ItemInfo extends State<PetProfile> {
                       child: Row(
                         children: <Widget>[
                           Text(
-                              "Lần báo cáo trước: ",
+                              "Cập nhật lần cuối: ",
                               style:
                                   TextStyle(color: Colors.black54, fontWeight: FontWeight.bold, fontSize: 17, ),
                             ),
                           Text(
-                              "20/05/1999",
+                              "20/05/2020",
                             style:
                             TextStyle(color: Colors.grey, fontWeight: FontWeight.w300, fontStyle: FontStyle.italic, fontSize: 15,),
                           ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pet_help/view/HomePage.dart';
+import 'package:pet_help/view/HomePageUser/HomePage.dart';
 import 'package:splashscreen/splashscreen.dart';
 
 class splash_screen extends StatefulWidget {

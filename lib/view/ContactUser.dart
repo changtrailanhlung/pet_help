@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pet_help/components/listMessenger.dart';
-import 'package:pet_help/view/HomePage.dart';
+import 'package:pet_help/components/listMessengerUser.dart';
+import 'package:pet_help/view/HomePageUser/HomePage.dart';
 import 'package:pet_help/view/RescueHome.dart';
 
 class ContactViewUser extends StatefulWidget {
@@ -14,7 +15,6 @@ class _ContactViewState extends State<ContactViewUser> {
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-
             icon: Icon(Icons.arrow_back_ios, color: Colors.white),
             onPressed: () {
               Navigator.of(context).pushReplacement(MaterialPageRoute(
@@ -26,7 +26,7 @@ class _ContactViewState extends State<ContactViewUser> {
         backgroundColor: Color.fromRGBO(253, 158, 121, 1),
       ),
       body: Column(
-        children: [Expanded(child: ListMess())],
+        children: [Expanded(child: listMessengerUser())],
       ),
     );
   }

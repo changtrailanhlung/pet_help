@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:pet_help/view/HomePage.dart';
+import 'package:pet_help/view/HomePageUser/HomePage.dart';
 import 'package:pet_help/view/PostDetail.dart';
 import 'package:pet_help/view/loadimg.dart';
 import 'loadimg.dart';

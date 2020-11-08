@@ -1,10 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:pet_help/components/DropDownScreen.dart';
-
-import 'package:pet_help/view/HomePage.dart';
+import 'package:pet_help/view/HomePageUser/HomePage.dart';
 import 'package:pet_help/view/PetProfile.dart';
-import 'package:pet_help/view/PetHealthReportList.dart';
 
 class RescuePetList extends StatefulWidget {
   @override
@@ -87,7 +84,7 @@ class RescuePetListState extends State<RescuePetList> {
                     child: Row(
                       children: <Widget>[
                         Image.asset(
-                          'src/image/meo1.jpg',
+                          'src/image/download.jpg',
                           width: 140,
                           height: 240,
                         ),
@@ -117,6 +114,27 @@ class RescuePetListState extends State<RescuePetList> {
                                           fontWeight: FontWeight.bold,
                                           color:
                                               Color.fromRGBO(253, 158, 121, 1)),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.fromLTRB(8, 0, 0, 8),
+                                      child: Row(
+                                        children: [
+                                          Text(
+                                            "Cập nhật lần cuối: ",
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                          Text(
+                                            "20/05/2020",
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                              color: Colors.grey,
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     ),
                                     Padding(
                                       padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
@@ -220,6 +238,27 @@ class RescuePetListState extends State<RescuePetList> {
                                       ),
                                     ),
                                     Padding(
+                                      padding: const EdgeInsets.fromLTRB(8, 0, 0, 8),
+                                      child: Row(
+                                        children: [
+                                          Text(
+                                            "Cập nhật lần cuối: ",
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                              color: Colors.grey,
+                                            ),
+                                          ),
+                                          Text(
+                                            "15/04/2020",
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                              color: Colors.grey,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
                                       padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
                                       child: SizedBox(
                                         width: size.width * 0.38,
@@ -312,6 +351,27 @@ class RescuePetListState extends State<RescuePetList> {
                                       fontSize: 30,
                                       fontWeight: FontWeight.bold,
                                       color: Color.fromRGBO(253, 158, 121, 1),
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.fromLTRB(8, 0, 0, 8),
+                                    child: Row(
+                                      children: [
+                                        Text(
+                                          "Cập nhật lần cuối: ",
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                        Text(
+                                          "5/1/2020",
+                                          style: TextStyle(
+                                            fontSize: 14,
+                                            color: Colors.grey,
+                                          ),
+                                        )
+                                      ],
                                     ),
                                   ),
                                   Padding(
