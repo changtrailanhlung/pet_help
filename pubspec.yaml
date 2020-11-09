@@ -111,6 +111,8 @@ flutter:
     - src/image/lost_puppyjpg.jpg
     - src/image/samoyed.jpg
     - src/image/pet_4.jpg
+    - src/image/Shiba1.jpg
+    - src/image/Corgi1.jpg
     - src/image/pet_5.jpg
     - src/image/pet_6.jpg
     - src/image/cat_mouth1.jpg

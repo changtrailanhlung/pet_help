@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pet_help/components/BottomNaviBar.dart';
 import 'package:pet_help/components/BottomNaviBarRescue.dart';
-import 'file:///E:/Github/HCI201/Pet-Help/lib/components/ListHeader/list_header.dart';
+import 'package:pet_help/components/ListHeader/list_header.dart';
+import 'package:pet_help/components/ListHeader/rescue_list_header.dart';
+// import 'file:///E:/Github/HCI201/Pet-Help/lib/components/ListHeader/list_header.dart';
 import 'package:pet_help/components/rescue_home_list.dart';
 import 'package:pet_help/rate_my_app/RateMyApp.dart';
 import 'package:pet_help/rate_my_app/RateMyAppRescue.dart';
@@ -178,7 +180,7 @@ class RescueHome extends StatelessWidget {
         ),
         child: Column(
           children: [
-            HeaderList(),
+            RescueHeaderList(),
             Expanded(child: RescueHomeList()),
             BottomNaviBarRescue()
           ],
