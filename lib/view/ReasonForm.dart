@@ -50,12 +50,11 @@ class ReasonFormStage extends State<ReasonForm> {
       }
     });
   }
+
+  var value;
   @override
   Widget build(BuildContext context) {
     int _value = 1;
-
-
-
     return Scaffold(
 
       appBar: AppBar(
@@ -97,23 +96,23 @@ class ReasonFormStage extends State<ReasonForm> {
                       fontSize: 17, color: Colors.black54 ),
                 ),
                 DropdownButton(
-                    value: _value,
+                    value: this.value,
                     items: [
                       DropdownMenuItem(
                         child: Text(""),
-                        value: 1,
+                        value: '',
                       ),
                       DropdownMenuItem(
 
                         child: Text("Phương tiện giao thông gặp sự cố"),
-                        value: 2,
+                        value: 'Phương tiện giao thông gặp sự cố',
                       ),
                       DropdownMenuItem(
-                          child: Text("Không tìm thấy đối tượng"), value: 3),
+                          child: Text("Không tìm thấy đối tượng"), value: 'Không tìm thấy đối tượng'),
                       DropdownMenuItem(
-                          child: Text("Gặp các vấn đề giao thông khác"), value: 4),
+                          child: Text("Gặp các vấn đề giao thông khác"), value: 'Gặp các vấn đề giao thông khác'),
                       DropdownMenuItem(
-                          value: 5,
+                          value: 'Khác',
                           child: GestureDetector(
                             onTap: (){
                               visibilityTag ? null : _changed(true, "tag");
@@ -121,9 +120,9 @@ class ReasonFormStage extends State<ReasonForm> {
                             child: Text("Khác"),
                           ),),
                     ],
-                    onChanged: (value) {
+                    onChanged: (val) {
                       setState(() {
-                        _value = value;
+                        this.value = val;
                       });
                     }),
         // DropdownButton<String>(

@@ -3,6 +3,7 @@ import 'package:flutter_material_color_picker/flutter_material_color_picker.dart
 import 'package:google_fonts/google_fonts.dart';
 import 'package:pet_help/components/BottomNaviBar.dart';
 import 'package:pet_help/components/ListHeader/list_header.dart';
+import 'package:pet_help/components/ListHeader/rescue_list_header.dart';
 // import 'file:///E:/Github/HCI201/Pet-Help/lib/components/ListHeader/list_header.dart';
 import 'package:pet_help/components/rescue_home_list.dart';
 import 'package:pet_help/view/HomePageUser/HomePage.dart';
@@ -48,7 +49,7 @@ class UserPostManagement extends StatelessWidget {
         decoration: BoxDecoration(),
         child: Column(
           children: [
-            HeaderList(),
+            RescueHeaderList(),
             Expanded(
               child: SingleChildScrollView(
                 child: Column(

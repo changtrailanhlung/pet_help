@@ -55,7 +55,9 @@ class _UploadImagesState extends State<UploadImages> {
       }),
     );
   }
-
+  var value;
+  var typevalue;
+  var situvalue;
   @override
   Widget build(BuildContext context) {
     int _value = 1;
@@ -63,7 +65,7 @@ class _UploadImagesState extends State<UploadImages> {
     return SingleChildScrollView(
       child: Column(
         children: <Widget>[
-          SizedBox(height: 20,),
+          SizedBox(height: 40,),
           Container(
               // child: Column(
               //   children: <Widget>[
@@ -173,23 +175,23 @@ class _UploadImagesState extends State<UploadImages> {
                             fontSize: 17, color: Colors.black54 ),
                       ),
                       DropdownButton(
-                          value: _value,
+                          value: this.value,
                           items: [
                             DropdownMenuItem(
                               child: Text(""),
-                              value: 1,
+                              value: '',
                             ),
                             DropdownMenuItem(
                               child: Text("Đực"),
-                              value: 2,
+                              value: 'Đực',
                             ),
                             DropdownMenuItem(
-                                child: Text("Cái"), value: 3),
+                                child: Text("Cái"), value: 'Cái'),
 
                           ],
-                          onChanged: (value) {
+                          onChanged: (val) {
                             setState(() {
-                              _value = value;
+                              this.value = val;
                             });
                           }),
                       Text(
@@ -198,27 +200,27 @@ class _UploadImagesState extends State<UploadImages> {
                             fontSize: 17, color: Colors.black54 ),
                       ),
                       DropdownButton(
-                          value: _value,
+                          value: this.typevalue,
                           items: [
                             DropdownMenuItem(
                               child: Text(""),
-                              value: 1,
+                              value: '',
                             ),
                             DropdownMenuItem(
                               child: Text("Chó"),
-                              value: 2,
+                              value: 'Chó',
                             ),
                             DropdownMenuItem(
-                                child: Text("Mèo"), value: 3),
+                                child: Text("Mèo"), value: 'Mèo'),
                             DropdownMenuItem(
                                 child: Text("Hamster"),
-                                value: 4),
+                                value: 'Hamster'),
                             DropdownMenuItem(
-                                child: Text("Khác"), value: 5)
+                                child: Text("Khác"), value: 'Khác')
                           ],
-                          onChanged: (value) {
+                          onChanged: (val) {
                             setState(() {
-                              _value = value;
+                              this.typevalue = val;
                             });
                           }),
                     ],
@@ -289,23 +291,23 @@ class _UploadImagesState extends State<UploadImages> {
                         fontSize: 17, color: Colors.black54 ),
                   ),
                   DropdownButton(
-                      value: _value,
+                      value: this.situvalue,
                       items: [
                         DropdownMenuItem(
                           child: Text(""),
-                          value: 1,
+                          value: '',
                         ),
                         DropdownMenuItem(
                           child: Text("Đang trong quá trình phục hồi"),
-                          value: 2,
+                          value: 'Đang trong quá trình phục hồi',
                         ),
                         DropdownMenuItem(
-                            child: Text("Đã phục hồi"), value: 3),
+                            child: Text("Đã phục hồi"), value: 'Đã phục hồi'),
 
                       ],
-                      onChanged: (value) {
+                      onChanged: (val) {
                         setState(() {
-                          _value = value;
+                          this.situvalue = val;
                         });
                       }),
 

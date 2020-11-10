@@ -112,6 +112,11 @@ class PetReportFormStage extends State<PetReportForm> {
                             color: Colors.brown, fontSize: 30, fontWeight: FontWeight.bold),
                       ),
                     ),
+
+                    Container(
+                      child: ImgLoad(),
+                    ),
+                    SizedBox(height: 20,),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Row(
@@ -134,9 +139,6 @@ class PetReportFormStage extends State<PetReportForm> {
                           ),
                         ],
                       ),
-                    ),
-                    Container(
-                      child: ImgLoad(),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -225,80 +227,8 @@ class PetReportFormStage extends State<PetReportForm> {
                         ),
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 440,
-                        height: 50,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(18),
-                            boxShadow: [
-                              new BoxShadow(
-                                  color: Colors.black54,
-                                  offset: new Offset(1.0, 2.0),
-                                  blurRadius: 3.5),
-                            ]),
-                        child: Row(
-                          children: [
-                            Text(
-                              "  Tuổi: ",
-                              style: TextStyle(
-                                  fontSize: 18, fontWeight: FontWeight.bold),
-                            ),
-                            CustomNumberPicker(
-                              initialValue: 1,
-                              maxValue: 150,
-                              minValue: 0,
-                              step: 1,
-                              onValue: (value) {
-                                print(value.toString());
-                              },
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 440,
-                        height: 50,
-                        decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(18),
-                            boxShadow: [
-                              new BoxShadow(
-                                  color: Colors.black54,
-                                  offset: new Offset(1.0, 2.0),
-                                  blurRadius: 3.5),
-                            ]),
-                        child: Row(
-                          children: [
-                            Text(
-                              "  Chiều dài: ",
-                              style: TextStyle(
-                                  fontSize: 18, fontWeight: FontWeight.bold),
-                            ),
-                            CustomNumberPicker(
-                              initialValue: 1,
-                              maxValue: 150,
-                              minValue: 0,
-                              step: 1,
-                              onValue: (value) {
-                                print(value.toString());
-                              },
-                            ),
-                            Text(
-                              " Cm",
-                              style: TextStyle(
-                                fontSize: 16,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
+
+
                     Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: Container(

@@ -25,7 +25,10 @@ class _UploadImagesResState extends State<UploadImagesRes> {
   void initState() {
     super.initState();
   }
-
+  var situvalue;
+  var pervalue;
+  var qes1value;
+  var qes2value;
   Widget buildGridView() {
     return GridView.count(
       crossAxisCount: 3,
@@ -293,23 +296,23 @@ class _UploadImagesResState extends State<UploadImagesRes> {
                           fontSize: 17, color: Colors.black54 ),
                     ),
                     DropdownButton(
-                        value: _value,
+                        value: this.pervalue,
                         items: [
                           DropdownMenuItem(
                             child: Text(""),
-                            value: 1,
+                            value: '',
                           ),
                           DropdownMenuItem(
                             child: Text("Khoẻ mạnh"),
-                            value: 2,
+                            value: 'Khoẻ mạnh',
                           ),
                           DropdownMenuItem(
-                              child: Text("Bị thương"), value: 3),
+                              child: Text("Bị thương"), value: 'Bị thương'),
 
                         ],
-                        onChanged: (value) {
+                        onChanged: (val) {
                           setState(() {
-                            _value = value;
+                            this.pervalue = val;
                           });
                         }),
 
@@ -325,25 +328,25 @@ class _UploadImagesResState extends State<UploadImagesRes> {
                           fontSize: 17, color: Colors.black54 ),
                     ),
                     DropdownButton(
-                        value: _value,
+                        value: situvalue,
                         items: [
                           DropdownMenuItem(
                             child: Text(""),
-                            value: 1,
+                            value: '',
                           ),
                           DropdownMenuItem(
                             child: Text("Nhẹ"),
-                            value: 2,
+                            value: 'Nhẹ',
                           ),
                           DropdownMenuItem(
-                              child: Text("Trung bình"), value: 3),
+                              child: Text("Trung bình"), value: 'Trung bình'),
                           DropdownMenuItem(
-                              child: Text("Nặng"), value: 3),
+                              child: Text("Nặng"), value: 'Nặng'),
 
                         ],
-                        onChanged: (value) {
+                        onChanged: (val) {
                           setState(() {
-                            _value = value;
+                            this.situvalue = val;
                           });
                         }),
 
@@ -367,23 +370,23 @@ class _UploadImagesResState extends State<UploadImagesRes> {
                         fontSize: 17, color: Colors.black54 ),
                   ),
                   DropdownButton(
-                      value: _value,
+                      value: this.qes1value,
                       items: [
                         DropdownMenuItem(
                           child: Text(""),
-                          value: 1,
+                          value: '',
                         ),
                         DropdownMenuItem(
                           child: Text("Có"),
-                          value: 2,
+                          value: 'Có',
                         ),
                         DropdownMenuItem(
-                            child: Text("Không"), value: 3),
+                            child: Text("Không"), value: 'Không'),
 
                       ],
-                      onChanged: (value) {
+                      onChanged: (val) {
                         setState(() {
-                          _value = value;
+                          this.qes1value = val;
                         });
                       }),
 
@@ -398,23 +401,23 @@ class _UploadImagesResState extends State<UploadImagesRes> {
                         fontSize: 17, color: Colors.black54 ),
                   ),
                   DropdownButton(
-                      value: _value,
+                      value: this.qes2value,
                       items: [
                         DropdownMenuItem(
                           child: Text(""),
-                          value: 1,
+                          value: '',
                         ),
                         DropdownMenuItem(
                           child: Text("Có"),
-                          value: 2,
+                          value: 'Có',
                         ),
                         DropdownMenuItem(
-                            child: Text("Không"), value: 3),
+                            child: Text("Không"), value: 'Không'),
 
                       ],
-                      onChanged: (value) {
+                      onChanged: (val) {
                         setState(() {
-                          _value = value;
+                          this.qes2value = val;
                         });
                       }),
 

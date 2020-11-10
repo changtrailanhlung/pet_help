@@ -70,7 +70,9 @@ class _PickState extends State<Pick> {
   //         );
   //       });
   // }
-
+var typevalue;
+var allvalue;
+var injurvalue;
   @override
   Widget build(BuildContext context) {
     int _value = 1;
@@ -183,27 +185,27 @@ class _PickState extends State<Pick> {
                                   fontSize: 17, ),
                               ),
                               DropdownButton(
-                                  value: _value,
+                                  value: this.typevalue,
                                   items: [
                                     DropdownMenuItem(
                                       child: Text(""),
-                                      value: 1,
+                                      value: '',
                                     ),
                                     DropdownMenuItem(
                                       child: Text("Chó"),
-                                      value: 2,
+                                      value: 'Chó',
                                     ),
                                     DropdownMenuItem(
-                                        child: Text("Mèo"), value: 3),
+                                        child: Text("Mèo"), value: 'Mèo'),
                                     DropdownMenuItem(
                                         child: Text("Hamster"),
-                                        value: 4),
+                                        value: 'Hamster'),
                                     DropdownMenuItem(
-                                        child: Text("Khác"), value: 5)
+                                        child: Text("Khác"), value: 'Khác')
                                   ],
-                                  onChanged: (value) {
+                                  onChanged: (val) {
                                     setState(() {
-                                      _value = value;
+                                      this.typevalue = val;
                                     });
                                   }),
 
@@ -266,31 +268,30 @@ class _PickState extends State<Pick> {
                                   fontSize: 17, ),
                               ),
                               DropdownButton(
-                                  value: _value,
+                                  value: this.allvalue,
                                   items: [
                                     DropdownMenuItem(
                                       child: Text(""),
-                                      value: 1,
+                                      value: '',
                                     ),
                                     DropdownMenuItem(
                                       child: Text("Vui vẻ"),
-                                      value: 2,
+                                      value: 'Vui vẻ',
                                     ),
                                     DropdownMenuItem(
-                                        child: Text("Dè chừng"), value: 3),
+                                        child: Text("Dè chừng"), value: 'Dè chừng'),
                                     DropdownMenuItem(
                                         child: Text("Sợ"),
-                                        value: 4),
+                                        value: 'Sợ'),
                                     DropdownMenuItem(
-                                        child: Text("Lảng tránh"), value: 5),
+                                        child: Text("Lảng tránh"), value: 'Lảng tránh'),
+
                                     DropdownMenuItem(
-                                        child: Text("Thất thường"), value: 6),
-                                    DropdownMenuItem(
-                                        child: Text("Cảnh giác cao"), value: 6),
+                                        child: Text("Cảnh giác cao"), value: 'Cảnh giác cao'),
                                   ],
-                                  onChanged: (value) {
+                                  onChanged: (val) {
                                     setState(() {
-                                      _value = value;
+                                      this.allvalue = val;
                                     });
                                   }),
                             ],
@@ -319,22 +320,22 @@ class _PickState extends State<Pick> {
                                   fontSize: 17, ),
                             ),
                             DropdownButton(
-                                value: _value,
+                                value: this.injurvalue,
                                 items: [
                                   DropdownMenuItem(
                                     child: Text(""),
-                                    value: 1,
+                                    value: '',
                                   ),
                                   DropdownMenuItem(
                                     child: Text("Có"),
-                                    value: 2,
+                                    value: 'Có',
                                   ),
                                   DropdownMenuItem(
-                                      child: Text("Không"), value: 3),
+                                      child: Text("Không"), value: 'Không'),
                                 ],
-                                onChanged: (value) {
+                                onChanged: (val) {
                                   setState(() {
-                                    _value = value;
+                                    this.injurvalue = val;
                                   });
                                 }),
                           ],
