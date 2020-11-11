@@ -41,8 +41,8 @@ class ForgotPassEmail extends StatelessWidget {
               ),
 
               CustomTextField(
-                hint: '   Vui lòng nhập Tên đăng nhập',
-                issecured: true,
+                hint: '   Vui lòng nhập tên đăng nhập',
+                issecured: false,
               ),
               SizedBox(
                 height: 25,
