@@ -171,15 +171,7 @@ class ItemInfo extends State<PetProfile> {
                                       style: TextStyle(color: Colors.orange)),
                                 ],
                               ),
-                              Column(
-                                children: [
-                                  Text(" Tuổi ",
-                                      style:
-                                      TextStyle(fontWeight: FontWeight.bold, color: Colors.blueAccent)),
-                                  Text("1",
-                                      style: TextStyle(color: Colors.orange)),
-                                ],
-                              ),
+
                               Column(
                                 children: [
                                   Text(" Giới tính ",
@@ -250,8 +242,8 @@ class ItemInfo extends State<PetProfile> {
                             style: TextStyle(color: Colors.black54, fontWeight: FontWeight.bold, fontSize: 17, ),
                           ),
                           Text(
-                            "Nguyên ",
-                            style: TextStyle(color: Colors.orange, fontWeight: FontWeight.w300, fontSize: 15, fontStyle: FontStyle.italic, ),
+                            "Nguyễn Văn Du ",
+                            style: TextStyle(color: Colors.orange, fontWeight: FontWeight.w700, fontSize: 15, fontStyle: FontStyle.italic, ),
                           ),
                         ],
                       ),
@@ -278,7 +270,7 @@ class ItemInfo extends State<PetProfile> {
                                   Navigator.of(context).push(
                                       new MaterialPageRoute(
                                           builder: (context) =>
-                                              ChatScreen(name: 'Nguyen',UrlImage: 'image/cat4.jpg',)));
+                                              ChatScreen(name: 'Nguyễn Văn Du',UrlImage: 'image/cat4.jpg',)));
                                 },
                                 child: Align(
                                   child: Text("Liên hệ",

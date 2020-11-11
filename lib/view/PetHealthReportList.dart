@@ -76,7 +76,7 @@ class ViewPetReportList extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  "Tan1",
+                                  "Nguyễn Văn Du",
                                   style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
@@ -223,7 +223,7 @@ class ViewPetReportList extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                "Tan1",
+                                "Nguyễn Văn Du",
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,

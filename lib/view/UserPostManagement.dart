@@ -249,7 +249,7 @@ class UserPostManagement extends StatelessWidget {
                                   children: [
                                     Icon(Icons.location_on),
                                     Text(
-                                      " 256 Lê Văn Việt , Q.9, HCM",
+                                      " 45,Đỗ Xuân Hợp , Q.9, HCM",
                                         style: TextStyle(
                                           fontSize: 15,
                                           fontWeight: FontWeight.bold,

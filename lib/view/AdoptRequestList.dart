@@ -77,7 +77,7 @@ class AdoptRequestList extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  "Lậu",
+                                  "Bum",
                                   style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
@@ -124,7 +124,7 @@ class AdoptRequestList extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  "26/9/2020",
+                                  "9/11/2020",
                                   style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
@@ -148,7 +148,7 @@ class AdoptRequestList extends StatelessWidget {
                                   ),
                                 ),
                                 Text(
-                                  " 658 Lê Văn Luyện, Q9",
+                                  " đường 3/2, p. 14, q.10",
                                   style: TextStyle(
                                     fontSize: 15,
                                     fontWeight: FontWeight.bold,
@@ -218,7 +218,7 @@ class AdoptRequestList extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                "Bụt",
+                                "Trắng",
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
@@ -241,7 +241,7 @@ class AdoptRequestList extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                "Tan1",
+                                "Dũng Phạm",
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
@@ -265,7 +265,7 @@ class AdoptRequestList extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                "26/9/2020",
+                                "15/10/2020",
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
@@ -289,7 +289,7 @@ class AdoptRequestList extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                " 658 Lê Văn Luyện, Q9",
+                                " 25, Lê Văn Việt, Q9",
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
@@ -358,7 +358,7 @@ class AdoptRequestList extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                "Ngáo",
+                                "Kitty",
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
@@ -381,7 +381,7 @@ class AdoptRequestList extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                "Nguyen",
+                                "Nguyên Lê",
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
@@ -429,7 +429,7 @@ class AdoptRequestList extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                " 658 Lê Văn Luyện, Q9",
+                                " Hoàng Diệu 2, Thủ Đức",
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,

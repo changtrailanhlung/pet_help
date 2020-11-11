@@ -132,7 +132,7 @@ class PetHealthReportDetail extends StatelessWidget {
                                 ),
                               ),
                               Text(
-                                "Tan1",
+                                "Nguyễn Văn Du",
                                 style: TextStyle(
                                   fontSize: 15,
                                   fontWeight: FontWeight.bold,
@@ -192,7 +192,7 @@ class PetHealthReportDetail extends StatelessWidget {
                                   onPressed: () {
                                     Navigator.of(context)
                                         .pushReplacement(MaterialPageRoute(
-                                      builder: (context) => ChatScreen(name: 'Tan1',UrlImage: 'image/cat4.jpg',)));
+                                      builder: (context) => ChatScreen(name: 'Nguyễn Văn Du',UrlImage: 'image/cat4.jpg',)));
 
                                   },
                                   child: Padding(

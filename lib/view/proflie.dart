@@ -1,9 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:pet_help/view/HomePageUser/HomePage.dart';
 
 class ProfileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+            icon: Icon(Icons.arrow_back_ios, color: Colors.white),
+            onPressed: () {
+              Navigator.of(context).pushReplacement(MaterialPageRoute(
+                builder: (context) => MyHomePage(),
+              ));
+            }),
+
+        backgroundColor: Color.fromRGBO(253, 158, 121, 1),
+        centerTitle: true,
+      ),
       body: Column(
         children: <Widget>[
           Container(
@@ -117,37 +130,7 @@ class ProfileApp extends StatelessWidget {
           SizedBox(
             height: 20.0,
           ),
-          Container(
-            width: 300.00,
-            child: RaisedButton(
-                onPressed: () {},
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(80.0)),
-                elevation: 0.0,
-                padding: EdgeInsets.all(0.0),
-                child: Ink(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                        begin: Alignment.centerRight,
-                        end: Alignment.centerLeft,
-                        colors: [Colors.redAccent, Colors.pinkAccent]
-                    ),
-                    borderRadius: BorderRadius.circular(30.0),
-                  ),
-                  child: Container(
-                    constraints:
-                        BoxConstraints(maxWidth: 300.0, minHeight: 50.0),
-                    alignment: Alignment.center,
-                    child: Text(
-                      "Contact me",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 26.0,
-                          fontWeight: FontWeight.w300),
-                    ),
-                  ),
-                )),
-          ),
+
         ],
       ),
     );

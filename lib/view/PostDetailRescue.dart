@@ -164,15 +164,7 @@ class PostDetailRescueStage extends State<PostDetailRescue> {
                                       style: TextStyle(color: Colors.orange)),
                                 ],
                               ),
-                              Column(
-                                children: [
-                                  Text("Tuổi",
-                                      style:
-                                      TextStyle(color: Colors.blueAccent, fontWeight: FontWeight.bold,)),
-                                  Text("1 Tuổi",
-                                      style: TextStyle(color: Colors.orange)),
-                                ],
-                              ),
+
                               Column(
                                 children: [
                                   Text("Giới tính",

@@ -212,7 +212,7 @@ class MyPostDetailState extends State<MyPostDetail> {
                           Container(
                             width: 270,
                             child: Text(
-                              "658 Lã Xuân Oai, Q9, TP.HCM",
+                              "45, Đỗ Xuân Hợp, Q9, TP.HCM",
                               style: TextStyle(
                                 fontSize: 17,
                                 fontWeight: FontWeight.w300,
@@ -279,7 +279,7 @@ class MyPostDetailState extends State<MyPostDetail> {
                                 Container(
                                   width: 230,
                                   child: Text(
-                                    "Cam",
+                                    "Trắng",
                                     style: TextStyle(
                                       fontSize: 17,
                                       fontWeight: FontWeight.w300,
@@ -324,7 +324,7 @@ class MyPostDetailState extends State<MyPostDetail> {
                                 Container(
                                   width: 230,
                                   child: Text(
-                                    "Bị thương",
+                                    "Khoẻ mạnh",
                                     style: TextStyle(
                                       fontSize: 17,
                                       fontWeight: FontWeight.w300,
@@ -358,56 +358,8 @@ class MyPostDetailState extends State<MyPostDetail> {
                           //     ],
                           //   ),
                           // ),
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(8, 0, 0, 8),
-                            child: Row(
-                              children: [
-                                Text(
-                                  "Vị trí vết thương: ",
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                                Container(
-                                  width: 230,
-                                  child: Text(
-                                    "Miệng",
-                                    style: TextStyle(
-                                      fontSize: 17,
-                                      fontWeight: FontWeight.w300,
-                                    ),
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.fromLTRB(8, 0, 0, 8),
-                            child: Row(
-                              children: [
-                                Text(
-                                  "Mức độ: ",
-                                  textAlign: TextAlign.left,
-                                  style: TextStyle(
-                                    fontSize: 17,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                                Container(
-                                  width: 200,
-                                  child: Text(
-                                    "Nặng",
-                                    style: TextStyle(
-                                      fontSize: 17,
-                                      fontWeight: FontWeight.w300,
-                                    ),
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
+
+
                         ],
                       ),
                     ),

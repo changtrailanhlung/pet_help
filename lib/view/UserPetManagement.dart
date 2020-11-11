@@ -78,10 +78,11 @@ class UserPetManagement extends StatelessWidget {
                               Column(
                                 children: [
                                   Text(
-                                    "BUM",
+                                    "Bum",
                                     style: TextStyle(
                                       fontSize: 30,
                                       fontWeight: FontWeight.bold,
+                                      color: Colors.blue,
                                     ),
                                   )
                                 ],
@@ -126,7 +127,7 @@ class UserPetManagement extends StatelessWidget {
                               alignment: Alignment.center,
                               // width: 170,
                               child: Text(
-                                "Bệnh viện Pet PRO",
+                                "Trung tâm Pet Pro",
                                 maxLines: 2,
                                 style: TextStyle(
                                   fontSize: 15,
@@ -188,10 +189,11 @@ class UserPetManagement extends StatelessWidget {
                               Column(
                                 children: [
                                   Text(
-                                    "Cái",
+                                    "Corgi",
                                     style: TextStyle(
                                       fontSize: 30,
                                       fontWeight: FontWeight.bold,
+                                      color: Colors.blue,
                                     ),
                                   )
                                 ],
@@ -236,7 +238,7 @@ class UserPetManagement extends StatelessWidget {
                               alignment: Alignment.center,
                               // width: 170,
                               child: Text(
-                                "Bệnh viện New Pet Hospital",
+                                "Trung tâm SAR",
                                 maxLines: 2,
                                 style: TextStyle(
                                   fontSize: 15,

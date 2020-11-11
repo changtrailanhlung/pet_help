@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:pet_help/components/chat.dart';
 import 'package:pet_help/view/HomePageUser/HomePage.dart';
+import 'package:pet_help/view/ReportFormList/PetProReportForm.dart';
 import 'package:pet_help/view/RescueReportForm.dart';
 
 import '../ReportFormList/ReportForm.dart';
 
-class SARProfileApp extends StatelessWidget {
+class PetProProfileApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,7 +39,7 @@ class SARProfileApp extends StatelessWidget {
                 padding: const EdgeInsets.only(right: 5.0),
                 child: IconButton(icon: Icon(Icons.warning),
                   onPressed: () {
-                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => RescueReportForm()));
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => PetProReportForm()));
                   },
                 ),
               ),
@@ -70,7 +71,7 @@ class SARProfileApp extends StatelessWidget {
                       CircleAvatar(
                         backgroundImage: NetworkImage(
                           // "https://sohanews.sohacdn.com/160588918557773824/2020/10/5/photo-1-1601889002966448421364.jpg",
-                          "https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/12920488_519234948276543_4172868031031562857_n.jpg?_nc_cat=107&ccb=2&_nc_sid=09cbfe&_nc_ohc=b6Dw6Y1GcG8AX8W06ko&_nc_ht=scontent.fsgn2-1.fna&oh=237a7ad6273c84dd382dba23fb064051&oe=5FC8E384",
+                          "https://cdn.dribbble.com/users/1870741/screenshots/4917129/petpro.jpg",
                         ),
                         radius: 50.0,
                       ),
@@ -78,7 +79,7 @@ class SARProfileApp extends StatelessWidget {
                         height: 10.0,
                       ),
                       Text(
-                        "Trung tâm SAR",
+                        "Trung tâm Pet Pro",
                         style: TextStyle(
                           fontSize: 22.0,
                           color: Colors.black,
@@ -96,7 +97,7 @@ class SARProfileApp extends StatelessWidget {
           ),
           Container(
             child: Text(
-              'SarRescue@gmail.com',
+              'PetProRescue@gmail.com',
               style: TextStyle(
                 fontSize: 19.0,
                 fontStyle: FontStyle.italic,
@@ -178,7 +179,7 @@ class SARProfileApp extends StatelessWidget {
                   ),
                   child: GestureDetector(
                     onTap: (){
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => ChatScreen(name: 'Trung Tâm SAR', UrlImage: '',)));
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => ChatScreen(name: 'Trung Tâm PetPro', UrlImage: '',)));
                     },
                     child: Container(
                       constraints:

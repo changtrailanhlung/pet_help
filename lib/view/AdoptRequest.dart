@@ -78,7 +78,7 @@ class AdoptRequest extends StatelessWidget {
                                     fontSize: 20, fontWeight: FontWeight.bold),
                               ),
                               Text(
-                                " 013456789",
+                                " 0356266013",
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
                                   fontSize: 20,
@@ -108,7 +108,7 @@ class AdoptRequest extends StatelessWidget {
                                   padding:
                                       const EdgeInsets.fromLTRB(7, 12, 8, 8),
                                   child: Text(
-                                    " 365 Lê Văn Việt, Q9, tp.HCM",
+                                    "đường 3/2, p. 14, q.10, tp.HCM",
                                     textAlign: TextAlign.left,
                                     style: TextStyle(
                                       fontSize: 20,
@@ -211,7 +211,7 @@ class AdoptRequest extends StatelessWidget {
                                               ),
                                             ),
                                             Text(
-                                              "Lậu",
+                                              "Bum",
                                               style: TextStyle(
                                                 fontSize: 15,
                                                 fontWeight: FontWeight.bold,
@@ -236,7 +236,7 @@ class AdoptRequest extends StatelessWidget {
                                               ),
                                             ),
                                             Text(
-                                              "26/9/2020",
+                                              "09/11/2020",
                                               style: TextStyle(
                                                 fontSize: 15,
                                                 fontWeight: FontWeight.bold,
@@ -347,7 +347,7 @@ class AdoptRequest extends StatelessWidget {
                               onPressed: () {
                                 Navigator.of(context)
                                     .pushReplacement(MaterialPageRoute(
-                                  builder: (context) => ChatScreen(name: 'Luan San',UrlImage: 'image/cat4.jpg',),
+                                  builder: (context) => ChatScreen(name: 'Nguyễn Văn Du',UrlImage: 'image/cat4.jpg',),
                                 ));
                               },
                               child: Text(

@@ -6,7 +6,9 @@ import 'package:pet_help/components/chatUser.dart';
 import 'package:pet_help/components/item_image.dart';
 import 'package:pet_help/view/Contact.dart';
 import 'package:pet_help/view/PetHealthReportDetail.dart';
+import 'package:pet_help/view/PetProfile.dart';
 import 'package:pet_help/view/PetReportForm.dart';
+import 'package:pet_help/view/ProfileList/PetProProfile.dart';
 import 'package:pet_help/view/RescuePetManagement.dart';
 import 'package:pet_help/view/PetHealthReportList.dart';
 import 'package:pet_help/view/UserPetManagement.dart';
@@ -220,9 +222,9 @@ class ItemInfo extends State<UserPetProfile> {
                           width: 110,
                           alignment: Alignment(0.1, 1.0),
                           child: Text(
-                            "BUM",
+                            "Bum",
                             style: TextStyle(
-                                color: Colors.brown,
+                                color: Color.fromRGBO(253, 158, 121, 1),
                                 fontWeight: FontWeight.bold,
                                 fontSize: 40),
                           ),
@@ -250,11 +252,11 @@ class ItemInfo extends State<UserPetProfile> {
                       child: Row(
                         children: <Widget>[
                           Text(
-                            "Last reported: ",
+                            "Cập nhật lần cuối: ",
                             style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                           ),
                           Text(
-                            " 20/05/1999 - 10:10:07",
+                            " 15/02/2020 - 10:10:07",
                             style: TextStyle(fontStyle: FontStyle.italic, color: Colors.grey, fontSize: 15),
                           ),
                         ],
@@ -268,9 +270,17 @@ class ItemInfo extends State<UserPetProfile> {
                             "Nhận nuôi từ: ",
                             style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
                           ),
-                          Text(
-                            "Bệnh viện Pet PRO",
-                            style: TextStyle(color: Colors.orange),
+                          GestureDetector(
+                            onTap: (){
+                              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => PetProProfileApp()));
+                            },
+                            child: Text(
+                              "Trung tâm PetPro",
+                              style: TextStyle(color: Colors.orange,
+                                fontSize: 17,
+                                fontWeight: FontWeight.w700
+                              ),
+                            ),
                           ),
                         ],
                       ),
@@ -297,7 +307,7 @@ class ItemInfo extends State<UserPetProfile> {
                                   Navigator.of(context)
                                       .push(new MaterialPageRoute(
                                     builder: (context) => ChatUserScreen(
-                                      name: "Bệnh viện Pet PRO",
+                                      name: "Trung tâm Pet PRO",
                                       UrlImage: "",
                                     ),
                                   ));

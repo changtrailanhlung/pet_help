@@ -137,6 +137,29 @@ class RescuePetListState extends State<RescuePetList> {
                                       ),
                                     ),
                                     Padding(
+                                      padding: const EdgeInsets.fromLTRB(8, 0, 0, 8),
+                                      child: Row(
+                                        children: [
+                                          Text(
+                                            "Người nhận nuôi: ",
+                                            style: TextStyle(
+                                              fontSize: 16,
+                                              color: Colors.grey,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                          Text(
+                                            "Nguyễn Văn Du",
+                                            style: TextStyle(
+                                              fontSize: 18,
+                                              color: Color.fromRGBO(253, 158, 121, 1),
+                                              fontWeight: FontWeight.w700
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
                                       padding: EdgeInsets.fromLTRB(40, 0, 0, 0),
                                       child: SizedBox(
                                         width: size.width * 0.38,

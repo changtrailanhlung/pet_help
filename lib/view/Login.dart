@@ -203,6 +203,10 @@ class LoginState extends State<Login> {
           passController.text == "123") {
         Navigator.of(context)
             .push(new MaterialPageRoute(builder: (context) => MyHomePage()));
+      }else if (userController.text == "tom" &&
+          passController.text == "123") {
+        Navigator.of(context)
+            .push(new MaterialPageRoute(builder: (context) => MyHomePage()));
       }
     });
   }

@@ -169,7 +169,7 @@ class _ListViewPetState extends State<ListViewPet> {
                               ),
                             ),
                             Container(
-                              // width: size.width * 0.33,
+                               width: size.width * 0.4,
                               child: Column(
                                 children: [
                                   Text(

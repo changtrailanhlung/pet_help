@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pet_help/components/chat.dart';
-import 'package:pet_help/view/HomePageUser/HomePage.dart';
-import 'package:pet_help/view/RescueReportForm.dart';
+import 'package:pet_help/view/ReportFormList/ReportForm.dart';
 
-import '../ReportFormList/ReportForm.dart';
+import '../RescueHome.dart';
 
-class SARProfileApp extends StatelessWidget {
+class LuanDangProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +19,7 @@ class SARProfileApp extends StatelessWidget {
                 icon: Icon(Icons.arrow_back_ios, color: Colors.white),
                 onPressed: () {
                   Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => MyHomePage(),
+                    builder: (context) => RescueHome(),
                   ));
                 }
             ),
@@ -38,7 +37,7 @@ class SARProfileApp extends StatelessWidget {
                 padding: const EdgeInsets.only(right: 5.0),
                 child: IconButton(icon: Icon(Icons.warning),
                   onPressed: () {
-                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => RescueReportForm()));
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => ReportForm()));
                   },
                 ),
               ),
@@ -69,8 +68,7 @@ class SARProfileApp extends StatelessWidget {
                     children: <Widget>[
                       CircleAvatar(
                         backgroundImage: NetworkImage(
-                          // "https://sohanews.sohacdn.com/160588918557773824/2020/10/5/photo-1-1601889002966448421364.jpg",
-                          "https://scontent.fsgn2-1.fna.fbcdn.net/v/t1.0-9/12920488_519234948276543_4172868031031562857_n.jpg?_nc_cat=107&ccb=2&_nc_sid=09cbfe&_nc_ohc=b6Dw6Y1GcG8AX8W06ko&_nc_ht=scontent.fsgn2-1.fna&oh=237a7ad6273c84dd382dba23fb064051&oe=5FC8E384",
+                            "https://scontent.fsgn1-1.fna.fbcdn.net/v/t1.0-9/68360040_1370816656398860_4474408856373428224_o.jpg?_nc_cat=111&ccb=2&_nc_sid=09cbfe&_nc_ohc=b8sLfBXIWJYAX9NTIb_&_nc_ht=scontent.fsgn1-1.fna&oh=82e90ae7e2db51f2f2ec7b59434c6a1b&oe=5FCF42D1",
                         ),
                         radius: 50.0,
                       ),
@@ -78,7 +76,7 @@ class SARProfileApp extends StatelessWidget {
                         height: 10.0,
                       ),
                       Text(
-                        "Trung tâm SAR",
+                        "Luan Dang",
                         style: TextStyle(
                           fontSize: 22.0,
                           color: Colors.black,
@@ -96,7 +94,7 @@ class SARProfileApp extends StatelessWidget {
           ),
           Container(
             child: Text(
-              'SarRescue@gmail.com',
+              'LuanDang@gmail.com',
               style: TextStyle(
                 fontSize: 19.0,
                 fontStyle: FontStyle.italic,
@@ -178,14 +176,14 @@ class SARProfileApp extends StatelessWidget {
                   ),
                   child: GestureDetector(
                     onTap: (){
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => ChatScreen(name: 'Trung Tâm SAR', UrlImage: '',)));
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => ChatScreen(name: 'Luan Dang', UrlImage: '',)));
                     },
                     child: Container(
                       constraints:
                       BoxConstraints(maxWidth: 300.0, minHeight: 50.0),
                       alignment: Alignment.center,
                       child: Text(
-                        "Contact us",
+                        "Contact me",
                         style: TextStyle(
                             color: Colors.white,
                             fontSize: 26.0,

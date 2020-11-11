@@ -1,51 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pet_help/components/chat.dart';
-import 'package:pet_help/view/HomePageUser/HomePage.dart';
-import 'package:pet_help/view/RescueReportForm.dart';
 
-import '../ReportFormList/ReportForm.dart';
-
-class SARProfileApp extends StatelessWidget {
+class DinhHauProfile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Color.fromRGBO(253, 158, 121, 1),
-        titleSpacing: 0.0,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            IconButton(
-                icon: Icon(Icons.arrow_back_ios, color: Colors.white),
-                onPressed: () {
-                  Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => MyHomePage(),
-                  ));
-                }
-            ),
-
-
-          ],
-        ),
-        automaticallyImplyLeading: false,
-        centerTitle: true,
-        actions: <Widget>[
-          Row(
-            children: <Widget>[
-
-              Padding(
-                padding: const EdgeInsets.only(right: 5.0),
-                child: IconButton(icon: Icon(Icons.warning),
-                  onPressed: () {
-                    Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => RescueReportForm()));
-                  },
-                ),
-              ),
-            ],
-          )
-        ],
-      ),
       body: Column(
         children: <Widget>[
           Container(

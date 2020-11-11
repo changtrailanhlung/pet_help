@@ -3,15 +3,15 @@
     "name": "Bum",
     "title": "Mèo",
     "user": "Trung tâm SAR",
-    "address": "25 Lê Văn Việt, Q9",
+    "address": "45, Đỗ Xuân Hợp, Q9, TP.HCM",
     "pathImg" : "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Gillie_granting_an_audience_to_his_loyal_subjects_%284043308142%29.jpg/1200px-Gillie_granting_an_audience_to_his_loyal_subjects_%284043308142%29.jpg",
-    "distance": "2km"
+    "distance": "3km"
   },
   {
     "name": "Vàng",
     "title": "Mèo",
     "user": "Cứu Trợ FPT",
-    "address": "16 Võ Văn Ngân, Q9",
+    "address": "Lô 24, CVPM Quang Trung, Q.12,TP.HCM",
     "pathImg" : "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg",
     "distance": "1km"
   },
@@ -19,8 +19,8 @@
     "name": "Tam Thể",
     "title": "Mèo",
     "user": "Trung Tâm SAR",
-    "address": "25 Võ Chí Công, Q9",
+    "address": "45, Đỗ Xuân Hợp, Q9, TP.HCM",
     "pathImg" : "https://c.files.bbci.co.uk/12A9B/production/_111434467_gettyimages-1143489763.jpg",
-    "distance": "5km"
+    "distance": "3km"
   }
 ]

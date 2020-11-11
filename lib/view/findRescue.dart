@@ -263,7 +263,7 @@ var injurvalue;
                           child: Row(
                             children: [
                               Text(
-                                "   Tình trạng tổng quát: ",
+                                "   Tình trạng hiện tại: ",
                                 style: TextStyle(
                                   fontSize: 17, ),
                               ),
@@ -275,19 +275,12 @@ var injurvalue;
                                       value: '',
                                     ),
                                     DropdownMenuItem(
-                                      child: Text("Vui vẻ"),
-                                      value: 'Vui vẻ',
+                                      child: Text("Khẩn cấp"),
+                                      value: 'Khẩn cấp',
                                     ),
                                     DropdownMenuItem(
-                                        child: Text("Dè chừng"), value: 'Dè chừng'),
-                                    DropdownMenuItem(
-                                        child: Text("Sợ"),
-                                        value: 'Sợ'),
-                                    DropdownMenuItem(
-                                        child: Text("Lảng tránh"), value: 'Lảng tránh'),
+                                        child: Text("An toàn"), value: 'An toàn'),
 
-                                    DropdownMenuItem(
-                                        child: Text("Cảnh giác cao"), value: 'Cảnh giác cao'),
                                   ],
                                   onChanged: (val) {
                                     setState(() {
@@ -315,7 +308,7 @@ var injurvalue;
                         child: Row(
                           children: [
                             Text(
-                              "   Bị thương: ",
+                              "   Hiện trạng: ",
                               style: TextStyle(
                                   fontSize: 17, ),
                             ),
@@ -327,11 +320,11 @@ var injurvalue;
                                     value: '',
                                   ),
                                   DropdownMenuItem(
-                                    child: Text("Có"),
-                                    value: 'Có',
+                                    child: Text("Bị thương"),
+                                    value: 'Bị thương',
                                   ),
                                   DropdownMenuItem(
-                                      child: Text("Không"), value: 'Không'),
+                                      child: Text("Khoẻ mạnh"), value: 'Khoẻ mạnh'),
                                 ],
                                 onChanged: (val) {
                                   setState(() {
@@ -370,7 +363,7 @@ var injurvalue;
                               // contentPadding: EdgeInsets.all(30),
                               suffixIcon: Icon(Icons.mode_edit, color: Colors.orange,),
                               focusColor: Colors.green,
-                              hintText: "   Vị trí bị thương",
+                              hintText: "   Vị trí vết thương",
                               hintStyle: TextStyle(
                                   fontSize: 15,
                                   color: Colors.grey,
@@ -381,8 +374,8 @@ var injurvalue;
                     Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
-                            width: 440,
-                            height: 50,
+                          width: 440,
+                          height: 50,
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(18),
@@ -392,49 +385,35 @@ var injurvalue;
                                     offset: new Offset(1.0, 2.0),
                                     blurRadius: 3.5),
                               ]),
-                            child: Row(
-                              children: <Widget>[
-                                Expanded(
-                                  flex: 1,
-                                  child: Container(
-                                    child: Text(
-                                      "   Phần trăm bị thương: ",
-                                      style: TextStyle(
-                                        fontSize: 17, ),
+                          child: Row(
+                            children: [
+                              Text(
+                                "   Mức độ: ",
+                                style: TextStyle(
+                                  fontSize: 17, ),
+                              ),
+                              DropdownButton(
+                                  value: this.injurvalue,
+                                  items: [
+                                    DropdownMenuItem(
+                                      child: Text(""),
+                                      value: '',
                                     ),
-                                  ),
-                                ),
-                                // Container(
-                                //   color: Colors.orange,
-                                //   height: 100,
-                                //   width: 50,
-                                // ),
-                                Expanded(
-                                  flex: 1,
-                                  child: Container(
-                                      // width: 10.0,
-                                      child: TextField(
-                                        controller: number,
-                                        autocorrect: true,
-                                        keyboardType: TextInputType.number,
-                                        decoration: InputDecoration(hintText: '0'),
-                                      )
-                                  ),
-                                ),
-                                Expanded(
-                                  flex: 0,
-                                  child: Container(
-                                    width: 50.0,
-                                    child: Text("%",
-                                      style: TextStyle(
-                                        fontSize: 17, color: Colors.black),
+                                    DropdownMenuItem(
+                                      child: Text("Nặng"),
+                                      value: 'Nặng',
                                     ),
-                                  ),
-                                ),
-                              ],
-                            )
+                                    DropdownMenuItem(
+                                        child: Text("Nhẹ"), value: 'Nhẹ'),
+                                  ],
+                                  onChanged: (val) {
+                                    setState(() {
+                                      this.injurvalue = val;
+                                    });
+                                  }),
+                            ],
+                          ),
                         )
-
                     ),
                     Padding(
                       padding: const EdgeInsets.all(10.0),

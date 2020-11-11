@@ -61,7 +61,7 @@ class MyHomeDogPage extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
                     child: Text(
                       'Tom\n'
-                          'user@gmail.com',
+                          'tom.user@gmail.com',
                       style: GoogleFonts.lato(
                           fontStyle: FontStyle.normal,
                           color: Colors.white,

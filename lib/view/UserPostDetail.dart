@@ -9,6 +9,7 @@ import 'package:pet_help/view/Contact.dart';
 import 'package:pet_help/view/GMap.dart';
 import 'package:pet_help/view/GMap2.dart';
 import 'package:pet_help/view/MapPic.dart';
+import 'package:pet_help/view/ProfileList/LuanDangProfile.dart';
 import 'package:pet_help/view/RescueHome.dart';
 import 'package:pet_help/view/RescuePetManagement.dart';
 import 'package:pet_help/view/PetHealthReportList.dart';
@@ -170,15 +171,21 @@ class UserPostDetailState extends State<UserPostDetail> {
                               fontWeight: FontWeight.w500,
                             ),
                           ),
-                          Text(
-                            "Luân",
-                            style: TextStyle(
-                              fontSize: 20,
-                              color: Color.fromRGBO(253, 158, 121, 1),
-                              fontStyle: FontStyle.italic,
-                              fontWeight: FontWeight.w500,
+                          GestureDetector(
+                            onTap:(){
+                              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => LuanDangProfile()));
+
+                            },
+                            child: Text(
+                              "Luân Đặng",
+                              style: TextStyle(
+                                fontSize: 20,
+                                color: Color.fromRGBO(253, 158, 121, 1),
+                                fontStyle: FontStyle.italic,
+                                fontWeight: FontWeight.w500,
+                              ),
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),
@@ -489,7 +496,7 @@ class UserPostDetailState extends State<UserPostDetail> {
                                   Navigator.of(context)
                                       .push(new MaterialPageRoute(
                                           builder: (context) => ChatScreen(
-                                                name: 'Luân',
+                                                name: 'Luân Đặng',
                                                 UrlImage: '',
                                               )));
                                 },
